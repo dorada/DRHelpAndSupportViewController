@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DRHelpAndSupportViewController_Example', :exclusive => true do
+  pod 'DRHelpAndSupportViewController', :path => '../'
+end
+
+target 'DRHelpAndSupportViewController_Tests', :exclusive => true do
+  pod 'DRHelpAndSupportViewController', :path => '../'
+
+  
+end
