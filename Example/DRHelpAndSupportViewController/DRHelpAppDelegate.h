@@ -1,5 +1,5 @@
 //
-//  DRAppDelegate.h
+//  DRHelpAppDelegate.h
 //  DRHelpAndSupportViewController
 //
 //  Created by Daniel Broad on 02/06/2016.
@@ -8,8 +8,10 @@
 
 @import UIKit;
 
-@interface DRAppDelegate : UIResponder <UIApplicationDelegate>
+@interface DRHelpAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end

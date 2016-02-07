@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "DRAppDelegate.h"
+#import "DRHelpAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DRAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DRHelpAppDelegate class]));
     }
 }

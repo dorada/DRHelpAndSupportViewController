@@ -1,0 +1,6 @@
+framework module DRHelpAndSupportViewController {
+  umbrella header "DRHelpAndSupportViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

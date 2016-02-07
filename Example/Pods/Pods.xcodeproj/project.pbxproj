@@ -1,0 +1,1597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011D866A37B29CD39ADC9EC5E14C1F95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */; };
+		01922AC26315477EDADB70B8E61C2F4C /* DRInstallTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FAF83EB660667F4C2D86321E35ED2 /* DRInstallTracker.m */; };
+		08910BCC4E09804B096037423790B4CD /* DRDiskspaceUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 989795DF0C07DA2813C8A37E5B479A65 /* DRDiskspaceUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9428FC15D45D3AB456E2994E7AC6A6 /* DRThemedNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D6FB5CB01F464D58618B1BB3F9311727 /* DRThemedNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10394975A148CC1A489C1BE9DE4DB249 /* DRSimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = DA94AAE4AECD2F9620E0C2BB552EA3A6 /* DRSimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1227D0E30C6D39FD861AFA07AC32A198 /* DRSettingsSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 814C736BCECECD6E271AEAB69EE55ED1 /* DRSettingsSwitchTableViewCell.m */; };
+		128D6985FF10C9A3F9C1E3EB0BC187E0 /* DRSeparatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5363960CE3A379E9AC949E6D49E99080 /* DRSeparatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D4352004A64A6857ACC62B85C905D3 /* DRSimpleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D793CB920D13EFAF0B19A24BAA6313 /* DRSimpleAlert.m */; };
+		18751F11D70318B59CD1C2687914809F /* DoradaCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 74AD4B8AFCF63103539B0F08F4FC9698 /* DoradaCore.bundle */; };
+		1879A052C669CE51C28A396D501A755A /* DRLegacyLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8139150BD7024415A32F7051CB4B3D /* DRLegacyLoadingHUD.m */; };
+		1B8072FDD335B9D0EC088199FE6E2531 /* DRNavigationControllerWithPopControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278A915F3813E3FC21D11A07941004 /* DRNavigationControllerWithPopControl.m */; };
+		1DB30C954A0B36B94D0B0156086745B3 /* DRHelpAndSupportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAA27E2BCBABF74413A8571842B61DB /* DRHelpAndSupportViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF2A98585CDB59804759BE09DD13997 /* Pods-DRHelpAndSupportViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CF23724BF16A5E7A6EEE36DF1BD52D /* Pods-DRHelpAndSupportViewController_Tests-dummy.m */; };
+		25638B151E92896A52307EAB50F0B18A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EB591DCB810AE001AB8BCEA58555D9E8 /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		27420F42C0C139A22B7F2E453BE12AC0 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 02214D201386969FBE58C52FAB0E54C5 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27B13B4D7E59E1BB5CFB9CAC8228ECA7 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BBDEB56588747200EEC8B4543A7395 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2869105DBEAB7628F96A8188AF39973B /* NSString+OS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E7002DE556738F1FFC794F39656D52 /* NSString+OS7.m */; };
+		3186151CDFEB16FCCBF5325BFEC26D61 /* DRHelpAndSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72D1ED04E7471232B22108762CA62FE /* DRHelpAndSupportViewController.m */; };
+		336F6C3F756E4AD87F70CD0376338A95 /* DRSettingsSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7DA30BC1EADFCB3C1C278B0768488C /* DRSettingsSwitchTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CEE8F0E2CB64C10A2B7AA349EE6058F /* UIBezierPath+TextPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E7CD01E0A7D3135C38792B320ABE52 /* UIBezierPath+TextPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44213015B29033314D87B84F39E4BF5B /* DoradaCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2971C4F16FB00FF4A6CE3863D57C5916 /* DoradaCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45506ACAAA0B71C302E8D1996352674F /* DRHelpAndSupportViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1145A6CC199CB71769BA4FA35A8D0AE6 /* DRHelpAndSupportViewController-dummy.m */; };
+		45A868F78CB01EC2A445717318B8BE98 /* DRAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CC254A7383CE6E3B4A742B817F20B86 /* DRAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469CCAF06C296599120B0F404A26ECCF /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 76B82C8035353A6700D715972993D0E7 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		481B28F9D9ADE9CBDD3872E3403E6AF9 /* DRABTestingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C3D181FA23108B432F1D88FC189E1F /* DRABTestingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		492D44E52D11C08D5B9F8BEC5C327527 /* DRSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C98E17E4D9905566201C3D643CAB21 /* DRSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A31300DCEC7AAAC17ADB824E8553141 /* DRSeeThroughLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C089A1C5A6F54DFBDB6CC652007F7FD /* DRSeeThroughLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B1A972CC4344C50F2FA07D768F8125E /* Pods-DRHelpAndSupportViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 430504396135DF9658B8E8CE3A0D2365 /* Pods-DRHelpAndSupportViewController_Example-dummy.m */; };
+		4D72DEAB3E46FD13FC4A9E89AAE42A90 /* DRRateAppHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD799DDC9E5086507ABB0DE32E7167 /* DRRateAppHelpItem.m */; };
+		50168647D1F861F7E89EEE1F54DD550F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = BC5C1359C0C45518DD8C70B68EB38F4A /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		563DFA63AF4FFAF6B5B79FDEB493B7A7 /* DRGetHelpItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE369C5FA4764A17F0F10C5C1DE905D /* DRGetHelpItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4E4A6C8F0360467B8C30E25DA2278C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */; };
+		5F9753B7BE3C87569FC9D6DB6DBBDBEC /* DRHelpAndSupportViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43FF7F2A16CB6ABEC704D1F7BEF2766F /* DRHelpAndSupportViewController.bundle */; };
+		60EDA265536E8DCF5BD652A2BB342107 /* DRSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E4035FFDF50A63A4AB3AF6662926E9 /* DRSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64173186329A0D2BBBAA91714A621E48 /* DRFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B8E8B50505E1DD9B27A79CB3C4F2C2 /* DRFlowLayout.m */; };
+		6C30D3B27B151E2A15044A7C67EB4FD0 /* DRTwoLabelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC51D68F6E4AE0E325C1BB1D317B46 /* DRTwoLabelTitleView.m */; };
+		750F6BC87FD19E257F04089940549EDA /* DRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3942EADF1D8FA2DF978A927FCA0DDC18 /* DRNavigationController.m */; };
+		75BF1076B92CAF9F97D51E2BF95F394B /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C1F6CC474AB2E6E2409D75AB01C454 /* ZipArchive.framework */; };
+		7ADCC109FE1A977C3DDF23BE378F7215 /* DRGetHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4471422E2D949DBB4A44CE2A0DE8 /* DRGetHelpItem.m */; };
+		7B9191D07F6882CECAEA88699000C424 /* DRHelpAndSupportItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E825481C58F4F398C9FD39C88B04CC /* DRHelpAndSupportItem.m */; };
+		81CEAB824FBEC5ED8995B305A8C14C2E /* DRNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB820CE493508E7720C3CDE025FB286F /* DRNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		824BE6ED79DD1D310A986D996AD4558C /* UIDevice+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F53FE2D0D15892759F0730DB1CB0AD98 /* UIDevice+Extensions.m */; };
+		8405591095E6F8E2F98699FCDA89510E /* DRInstallTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D658FF62EF1A3FD033A87F24203249 /* DRInstallTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8463C9EF9EB94EADE7DB13F034D299C2 /* DRApplicationPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC5084BACA28750EC769569C8B66982 /* DRApplicationPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86AEAA9732072F28667FC0B1355EF97F /* DRLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DA676064FE308D62CAC72DD1B50C98 /* DRLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8874235448BF3014648C49B93EB48972 /* isPirate.m in Sources */ = {isa = PBXBuildFile; fileRef = B067B73BA0C5A7E03A3F1AD0431A369C /* isPirate.m */; };
+		8E09FD6C599F1108B42DCAEFE4DC64BC /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = D74483B0BE86C01911C787F2D4C947EA /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E1FAF4B40F226B2722A523962711E01 /* DRLoadingHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F60D54284046AA07A91FB02FA722A9 /* DRLoadingHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F576C52CB4AB65A6705BD0E7AF798A4 /* Pods-DRHelpAndSupportViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0F84366D3BC309EC90D545C40D68CF /* Pods-DRHelpAndSupportViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90ECB35DD78D68499CE29518400E0832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */; };
+		927B8EC479D5671195A64BEB6F5FA31A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */; };
+		96DD7C198A91CBE3B11D7568102A3840 /* ZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F10F7A4A1CEC3496374922294AE635D /* ZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98378E0794128AC9694600A08D1D5B05 /* DRApplicationPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = F6758E8A4A72A62D5323D3F6B53A6266 /* DRApplicationPaths.m */; };
+		990B0A9DEC0E034F1E98855004ABF112 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC83BE7417B91E41B15DB727FBAEC89 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		9A5C91E5E4A5F83052D262E97F632E83 /* Pods-DRHelpAndSupportViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A652AFE2ABB64C9EBD85DEA649D4C710 /* Pods-DRHelpAndSupportViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D57FA3654829A855409A00A343A5BE8 /* DRThemedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C6D610CB0B91C7E03018C2751EDD3B /* DRThemedNavigationController.m */; };
+		9D6F045EB12081E2E6726E671615026C /* DRHelpAndSupportViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 599DFC15816948FE1B1C152CF3EEA084 /* DRHelpAndSupportViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D9887713725AC582B540F0EF7AF52A7 /* NSString+OS7.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA781B2B8D8EF06C44997B729BCEA81 /* NSString+OS7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E67FB02B2DE20FE7EAF87895A172166 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7060D66209F0D9FB414F631EF254C0 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01C125274B642481A77200AC845E66A /* DRBlurryBackgroundViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BCE451AA7F2B2141D6510A3D312023 /* DRBlurryBackgroundViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5956BC39F221D47EA5A4CE54F116305 /* DRTwitterLinkHelpItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E4DA02958543B8F960061F32D6F807 /* DRTwitterLinkHelpItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D536F9C13C6C7EE187055BDFE485C9 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5D7A6644B1E96E53EB6BF97FD1321 /* ZipArchive-dummy.m */; };
+		AB9A59AE787BAD2C42760FDF476BF9CE /* DRHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA520056EFFB3DA8E1BBA124302A25BA /* DRHelpViewController.m */; };
+		AF9E85099B83E76D869E54DBA67F5F1C /* DRBlurryBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A40C66E37806837E938FAA5D241F51C /* DRBlurryBackgroundViewController.m */; };
+		B0B876A2DB55866FAEB30267E645DC2C /* DRActivityAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B2155A641C3531ADEA7878FF3C6BA5 /* DRActivityAlertView.m */; };
+		B15123271089FDE69792BD03B21C1EE9 /* DRActivityAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A87AF1BC3DCF73CE75804E5E283D5DB /* DRActivityAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75391E4394C3F62A8FF2D9B501BD499 /* DRHelpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 14982F1B4C7F51A779ECF837E9FBD585 /* DRHelpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B80DC0E300798FCE3C81A72BDCFA8DBF /* DRTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C5BC9B877D36DFCEC2F461FB39DD41 /* DRTimeFormatter.m */; };
+		BB17F61363E97A9AFB6E7961100A1B8B /* DRGetRatingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB2FF71BE6B4930F8E237C54BE3B27C /* DRGetRatingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07E78963E289AD56819C29A4E101C71 /* DRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CC19109E1DB7870C25E5CB21A437A6 /* DRLogger.m */; };
+		C0C06E3DC5F43C21036151E9B15266E7 /* DRSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FC7CAE9C337716E58405D0BD57130E /* DRSegmentedControl.m */; };
+		C3B41D6B49FBB9F8D07812D13ED84C9B /* DRSeeThroughLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4941502B9C7CF593394E73E7ACF20B81 /* DRSeeThroughLabel.m */; };
+		C3E36127F2EFEBF17D83E388E172C389 /* UIDevice+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D04DB7C53546CCD698C6F21493D62D13 /* UIDevice+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4566D31A9638337E14CEA929E1CF5CB /* DRTintingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E65E994F5390D748AC978C3719CEE /* DRTintingLabel.m */; };
+		C587CE0C23411E44C37E59BD5E1AE48D /* DRLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9AFC9503A7A9F5D76D52424C5DC77E /* DRLoadingHUD.m */; };
+		C7EB9B98C78AA94F44584B66A1DDA609 /* DRTwoLabelTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = C553EFB7E2CF12ADC067BF290EC0237B /* DRTwoLabelTitleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C80962EE78C550AC933FD72F59244C99 /* DRRateAppHelpItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90235A0B7EB557D506439E1E6C9ED4A9 /* DRRateAppHelpItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDEE09B0E2F7057F2AFD00C62FCC16B /* DRSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BFA34F1889E086B2A2B81613A9A989 /* DRSingleton.m */; };
+		CE61115156B8E92D173DD6CB84C23AEF /* DoradaCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC29BB6F99EFBDD50117ECE4683FD060 /* DoradaCore-dummy.m */; };
+		CE6D2ACB4B71598B13255D02BABCFC9D /* DRTwitterLinkHelpItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D438BA3914F6D059D4B700CED20A2CF /* DRTwitterLinkHelpItem.m */; };
+		D2D69DC7E1318E37DF61975EA1BDB6F4 /* DRLoadingHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A612CA44ED070FBAAE201737E8BC2B /* DRLoadingHUDView.m */; };
+		D3D31857CA7BD077F52B82C2E4AB4833 /* DRDiskspaceUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B3B03C495D5B050E50B4F2D5F7D72F /* DRDiskspaceUtilities.m */; };
+		D4F4428ECAB04FD2983036EBDE53B008 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = B49D8B370967FF2296DE906F55E4D31E /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D91DF75E128751AE0BCED88AE95B3586 /* UITabBarController+autoRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 054FE59EBE29791E43EE088C30D6D4F5 /* UITabBarController+autoRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA774B87FA5091AD613F889F3B688518 /* DRTintingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 40613F12E7828A130273DDD7ACC5F13B /* DRTintingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8523A4F1794154D2B2BA4D8D53425E /* UIBezierPath+TextPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA440D53BCE6D6D703175C83FA0C28A /* UIBezierPath+TextPaths.m */; };
+		DB459509A9106FB99505DAB009BA245A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */; };
+		E4BF83DC6D8B61B6631212A672B106A3 /* DRSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2811638EE771D6996291F87DFB3CEB60 /* DRSeparatorView.m */; };
+		E67305F8BA71E160FAC5D8411681CC50 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = C4737FC0368EDF2EB70FD9E75A392B09 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7C58B6D5EFE626AD26721EDC38170AE /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 759914568FC465F5CC88079A059AE089 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		EB4B745AEA3FE76F99DE591AE05B419C /* isPirate.h in Headers */ = {isa = PBXBuildFile; fileRef = 95CFDA0C341C4DAD1163AA81FF2A52AC /* isPirate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC5144CAFFDFED1D7C05A40B54777B47 /* DRHelpAndSupportItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E70427178915970456B976FFEC5CE850 /* DRHelpAndSupportItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEDAA59CFA363C025DD405128DD4521C /* DRLegacyLoadingHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F09ADDB61019DE2FD08E1145A2240AE2 /* DRLegacyLoadingHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFEF8F95AA174D94EA59BE398C94B8F5 /* DRNavigationControllerWithPopControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF01689248F6025F9E4B4C3BB083CC0 /* DRNavigationControllerWithPopControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4E6C65356056FE227DC342535412792 /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC75F860908B9FB7F4EDD08A0274AD44 /* DRAppDelegate.m */; };
+		F54D2EC52A316B9F2546AF297628FEEA /* DRFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA7C66099A605ADE47C8EF8E60ABC77 /* DRFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5B3ABFFAC55A04C19AD2A577109F490 /* DRABTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB670BC7A21DA52DBE63DFAA615F /* DRABTestingController.m */; };
+		F69DB0CF4D48AB7D652A847D95DBE23B /* UITabBarController+autoRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A4C90084030CE5EAD8C11075EC654D /* UITabBarController+autoRotate.m */; };
+		F6D219F433DB848E6F4CC30F6872BD4C /* DRTimeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFCE1B88BC9B2B3502D6C9BBFB25D32 /* DRTimeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F73BE85CD0B3D929C10B1B8BF8AEB2CE /* DRGetRatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869DCFA33151A796050553F996E6A2F9 /* DRGetRatingController.m */; };
+		F936A8E8EAF6D59B56BC9F7329FD044C /* DRLoadingHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E171DA497836FD7C386AF6816E751 /* DRLoadingHUDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF0B9B382282A3D71A12119CE9444EA0 /* DoradaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AAE605D19E17F49EABB3670DDCCC54 /* DoradaCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B74BF48B7213BFD0A02E2AC903F1942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D784805DF3016670E9F996A8EC19AE8;
+			remoteInfo = DRHelpAndSupportViewController;
+		};
+		154FD67E4C909F32CAB5CBA2B9C1980B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EDA0F603435CEFA83AD1B62FC451D29;
+			remoteInfo = "DRHelpAndSupportViewController-DRHelpAndSupportViewController";
+		};
+		23D7FBACECA9D1A0568681C17170B13A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F92EBF9107E7C572E1F201D1C751EB2;
+			remoteInfo = DoradaCore;
+		};
+		2FA979F083534588DB555BFEB21E9228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D784805DF3016670E9F996A8EC19AE8;
+			remoteInfo = DRHelpAndSupportViewController;
+		};
+		3FA4E2E1B59C59B3FB49CC089C8DFB78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F92EBF9107E7C572E1F201D1C751EB2;
+			remoteInfo = DoradaCore;
+		};
+		50EA004A225051A4AA67F70EEC0440B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC386469B991A8E6BF15074DE1E7342;
+			remoteInfo = ZipArchive;
+		};
+		5C0FC072AA376513DC0679EEB87A1D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC386469B991A8E6BF15074DE1E7342;
+			remoteInfo = ZipArchive;
+		};
+		B1198335DC453F5C77B68D4422DEE59C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E732955E3EA5DD656A062837FCA8F10;
+			remoteInfo = "DoradaCore-DoradaCore";
+		};
+		ECFCCC0C43156E9ED76A5D07BDD4476C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC386469B991A8E6BF15074DE1E7342;
+			remoteInfo = ZipArchive;
+		};
+		F51F5958DE848A7F2803483E82FC3DCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F92EBF9107E7C572E1F201D1C751EB2;
+			remoteInfo = DoradaCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02214D201386969FBE58C52FAB0E54C5 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		04C3B0FFC0E731F221E5A1AB18B0C998 /* Pods_DRHelpAndSupportViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRHelpAndSupportViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		054FE59EBE29791E43EE088C30D6D4F5 /* UITabBarController+autoRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+autoRotate.h"; path = "Pod/Classes/UI/UITabBarController+autoRotate.h"; sourceTree = "<group>"; };
+		07B40F833F735CCCA9DB082A6972AB88 /* DoradaCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DoradaCore.modulemap; sourceTree = "<group>"; };
+		07DA676064FE308D62CAC72DD1B50C98 /* DRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRLogger.h; path = Pod/Classes/Logger/DRLogger.h; sourceTree = "<group>"; };
+		0C1E00AFE5FA9C61768886AA3E0DD069 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1145A6CC199CB71769BA4FA35A8D0AE6 /* DRHelpAndSupportViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DRHelpAndSupportViewController-dummy.m"; sourceTree = "<group>"; };
+		14982F1B4C7F51A779ECF837E9FBD585 /* DRHelpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRHelpViewController.h; sourceTree = "<group>"; };
+		15278A915F3813E3FC21D11A07941004 /* DRNavigationControllerWithPopControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRNavigationControllerWithPopControl.m; path = Pod/Classes/UI/DRNavigationControllerWithPopControl.m; sourceTree = "<group>"; };
+		16F60D54284046AA07A91FB02FA722A9 /* DRLoadingHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRLoadingHUD.h; path = Pod/Classes/HUD/DRLoadingHUD.h; sourceTree = "<group>"; };
+		1758C6750DAFE7B1AED5C56059891856 /* DoradaCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoradaCore-prefix.pch"; sourceTree = "<group>"; };
+		19D793CB920D13EFAF0B19A24BAA6313 /* DRSimpleAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSimpleAlert.m; path = Pod/Classes/Alert/DRSimpleAlert.m; sourceTree = "<group>"; };
+		1A40C66E37806837E938FAA5D241F51C /* DRBlurryBackgroundViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRBlurryBackgroundViewController.m; path = Pod/Classes/UI/DRBlurryBackgroundViewController.m; sourceTree = "<group>"; };
+		1C089A1C5A6F54DFBDB6CC652007F7FD /* DRSeeThroughLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSeeThroughLabel.h; path = Pod/Classes/UI/DRSeeThroughLabel.h; sourceTree = "<group>"; };
+		1DB2FF71BE6B4930F8E237C54BE3B27C /* DRGetRatingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRGetRatingController.h; sourceTree = "<group>"; };
+		1E5CDA477E6131823A7958004196CBB2 /* DRHelpAndSupportViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DRHelpAndSupportViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC5084BACA28750EC769569C8B66982 /* DRApplicationPaths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRApplicationPaths.h; path = Pod/Classes/Utilities/DRApplicationPaths.h; sourceTree = "<group>"; };
+		2231DB1044193D7AA368FDF06B5FD323 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2811638EE771D6996291F87DFB3CEB60 /* DRSeparatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSeparatorView.m; path = Pod/Classes/HUD/DRSeparatorView.m; sourceTree = "<group>"; };
+		2971C4F16FB00FF4A6CE3863D57C5916 /* DoradaCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DoradaCore-umbrella.h"; sourceTree = "<group>"; };
+		29AAE605D19E17F49EABB3670DDCCC54 /* DoradaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DoradaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8FAF83EB660667F4C2D86321E35ED2 /* DRInstallTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRInstallTracker.m; path = Pod/Classes/Utilities/DRInstallTracker.m; sourceTree = "<group>"; };
+		2EAA27E2BCBABF74413A8571842B61DB /* DRHelpAndSupportViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRHelpAndSupportViewController.h; sourceTree = "<group>"; };
+		30A03CB5B337DDC6A30F4EDACD4C04D6 /* Pods-DRHelpAndSupportViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DRHelpAndSupportViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		31A4C90084030CE5EAD8C11075EC654D /* UITabBarController+autoRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+autoRotate.m"; path = "Pod/Classes/UI/UITabBarController+autoRotate.m"; sourceTree = "<group>"; };
+		3632FEAD8896ED556ABBF0BC63C192B3 /* Pods-DRHelpAndSupportViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DRHelpAndSupportViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		38D658FF62EF1A3FD033A87F24203249 /* DRInstallTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRInstallTracker.h; path = Pod/Classes/Utilities/DRInstallTracker.h; sourceTree = "<group>"; };
+		3942EADF1D8FA2DF978A927FCA0DDC18 /* DRNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRNavigationController.m; path = Pod/Classes/UI/DRNavigationController.m; sourceTree = "<group>"; };
+		3ACD799DDC9E5086507ABB0DE32E7167 /* DRRateAppHelpItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRRateAppHelpItem.m; sourceTree = "<group>"; };
+		3AF5D7A6644B1E96E53EB6BF97FD1321 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		3DF01689248F6025F9E4B4C3BB083CC0 /* DRNavigationControllerWithPopControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRNavigationControllerWithPopControl.h; path = Pod/Classes/UI/DRNavigationControllerWithPopControl.h; sourceTree = "<group>"; };
+		3F7555B6A18A15AA71A0065CFC0C4F4A /* Pods-DRHelpAndSupportViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRHelpAndSupportViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		40613F12E7828A130273DDD7ACC5F13B /* DRTintingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRTintingLabel.h; path = Pod/Classes/UI/DRTintingLabel.h; sourceTree = "<group>"; };
+		40E7002DE556738F1FFC794F39656D52 /* NSString+OS7.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OS7.m"; path = "Pod/Classes/String/NSString+OS7.m"; sourceTree = "<group>"; };
+		40E825481C58F4F398C9FD39C88B04CC /* DRHelpAndSupportItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRHelpAndSupportItem.m; sourceTree = "<group>"; };
+		430504396135DF9658B8E8CE3A0D2365 /* Pods-DRHelpAndSupportViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DRHelpAndSupportViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		43C6D610CB0B91C7E03018C2751EDD3B /* DRThemedNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRThemedNavigationController.m; path = Pod/Classes/UI/DRThemedNavigationController.m; sourceTree = "<group>"; };
+		43FF7F2A16CB6ABEC704D1F7BEF2766F /* DRHelpAndSupportViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRHelpAndSupportViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E4035FFDF50A63A4AB3AF6662926E9 /* DRSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSingleton.h; path = Pod/Classes/Singleton/DRSingleton.h; sourceTree = "<group>"; };
+		493629BECBDC440A03E2F95F5D9289F2 /* DRHelpAndSupportViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DRHelpAndSupportViewController.modulemap; sourceTree = "<group>"; };
+		4941502B9C7CF593394E73E7ACF20B81 /* DRSeeThroughLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSeeThroughLabel.m; path = Pod/Classes/UI/DRSeeThroughLabel.m; sourceTree = "<group>"; };
+		4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F10F7A4A1CEC3496374922294AE635D /* ZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		519E08693C5577F2F9413751C0CDBBCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52400DE3BC34364354F134BC9AE287A2 /* Pods-DRHelpAndSupportViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DRHelpAndSupportViewController_Example.modulemap"; sourceTree = "<group>"; };
+		52B3B03C495D5B050E50B4F2D5F7D72F /* DRDiskspaceUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRDiskspaceUtilities.m; path = Pod/Classes/Utilities/DRDiskspaceUtilities.m; sourceTree = "<group>"; };
+		5363960CE3A379E9AC949E6D49E99080 /* DRSeparatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSeparatorView.h; path = Pod/Classes/HUD/DRSeparatorView.h; sourceTree = "<group>"; };
+		567F01D560A20C2DA15F7FD9BA9CE93B /* DoradaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DoradaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		599DFC15816948FE1B1C152CF3EEA084 /* DRHelpAndSupportViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRHelpAndSupportViewController-umbrella.h"; sourceTree = "<group>"; };
+		5A87AF1BC3DCF73CE75804E5E283D5DB /* DRActivityAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRActivityAlertView.h; path = Pod/Classes/HUD/DRActivityAlertView.h; sourceTree = "<group>"; };
+		60A612CA44ED070FBAAE201737E8BC2B /* DRLoadingHUDView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRLoadingHUDView.m; path = Pod/Classes/HUD/DRLoadingHUDView.m; sourceTree = "<group>"; };
+		67090918067433CF5B918F46B10DEC7C /* Pods-DRHelpAndSupportViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DRHelpAndSupportViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AFCE1B88BC9B2B3502D6C9BBFB25D32 /* DRTimeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRTimeFormatter.h; path = Pod/Classes/Utilities/DRTimeFormatter.h; sourceTree = "<group>"; };
+		6CE369C5FA4764A17F0F10C5C1DE905D /* DRGetHelpItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRGetHelpItem.h; sourceTree = "<group>"; };
+		6EC83BE7417B91E41B15DB727FBAEC89 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		70C5BC9B877D36DFCEC2F461FB39DD41 /* DRTimeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRTimeFormatter.m; path = Pod/Classes/Utilities/DRTimeFormatter.m; sourceTree = "<group>"; };
+		736C0D6191401E38DF1121FB107114EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AD4B8AFCF63103539B0F08F4FC9698 /* DoradaCore.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoradaCore.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7597282756F9713AD9E33B7C3CCE3207 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759914568FC465F5CC88079A059AE089 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		75B2155A641C3531ADEA7878FF3C6BA5 /* DRActivityAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRActivityAlertView.m; path = Pod/Classes/HUD/DRActivityAlertView.m; sourceTree = "<group>"; };
+		76A95FC1DC53CAD2EE7868DDAE87ABDC /* DRHelpAndSupportViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRHelpAndSupportViewController-prefix.pch"; sourceTree = "<group>"; };
+		76B82C8035353A6700D715972993D0E7 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		7CC254A7383CE6E3B4A742B817F20B86 /* DRAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRAppDelegate.h; path = Pod/Classes/Singleton/DRAppDelegate.h; sourceTree = "<group>"; };
+		8142B9197C2506D5103B2075B979699C /* Pods-DRHelpAndSupportViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRHelpAndSupportViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		814C736BCECECD6E271AEAB69EE55ED1 /* DRSettingsSwitchTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSettingsSwitchTableViewCell.m; path = Pod/Classes/UI/DRSettingsSwitchTableViewCell.m; sourceTree = "<group>"; };
+		85AE9E8B864250333CB8FF3810069DB0 /* Pods-DRHelpAndSupportViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DRHelpAndSupportViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85BC51D68F6E4AE0E325C1BB1D317B46 /* DRTwoLabelTitleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRTwoLabelTitleView.m; path = Pod/Classes/UI/DRTwoLabelTitleView.m; sourceTree = "<group>"; };
+		869DCFA33151A796050553F996E6A2F9 /* DRGetRatingController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRGetRatingController.m; sourceTree = "<group>"; };
+		8868E32DCD06B607001566B59006181A /* ZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZipArchive.modulemap; sourceTree = "<group>"; };
+		8C3128DD7E06F27BAE770DBA63804C22 /* Pods-DRHelpAndSupportViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DRHelpAndSupportViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8F2E171DA497836FD7C386AF6816E751 /* DRLoadingHUDView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRLoadingHUDView.h; path = Pod/Classes/HUD/DRLoadingHUDView.h; sourceTree = "<group>"; };
+		90235A0B7EB557D506439E1E6C9ED4A9 /* DRRateAppHelpItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRRateAppHelpItem.h; sourceTree = "<group>"; };
+		90ADC8A864654C4D03BDAABA89CABB28 /* Pods-DRHelpAndSupportViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRHelpAndSupportViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		92C3D181FA23108B432F1D88FC189E1F /* DRABTestingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRABTestingController.h; path = Pod/Classes/ABTesting/DRABTestingController.h; sourceTree = "<group>"; };
+		92C98E17E4D9905566201C3D643CAB21 /* DRSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSegmentedControl.h; path = Pod/Classes/UI/DRSegmentedControl.h; sourceTree = "<group>"; };
+		95CFDA0C341C4DAD1163AA81FF2A52AC /* isPirate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = isPirate.h; path = Pod/Classes/Utilities/isPirate.h; sourceTree = "<group>"; };
+		989795DF0C07DA2813C8A37E5B479A65 /* DRDiskspaceUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRDiskspaceUtilities.h; path = Pod/Classes/Utilities/DRDiskspaceUtilities.h; sourceTree = "<group>"; };
+		9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DRHelpAndSupportViewController.xcconfig; sourceTree = "<group>"; };
+		9D438BA3914F6D059D4B700CED20A2CF /* DRTwitterLinkHelpItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRTwitterLinkHelpItem.m; sourceTree = "<group>"; };
+		9DDDFA0C3EB242B9AFC5025A517542EF /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA7C66099A605ADE47C8EF8E60ABC77 /* DRFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRFlowLayout.h; path = Pod/Classes/UI/DRFlowLayout.h; sourceTree = "<group>"; };
+		A0FC7CAE9C337716E58405D0BD57130E /* DRSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSegmentedControl.m; path = Pod/Classes/UI/DRSegmentedControl.m; sourceTree = "<group>"; };
+		A652AFE2ABB64C9EBD85DEA649D4C710 /* Pods-DRHelpAndSupportViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DRHelpAndSupportViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A7E7CD01E0A7D3135C38792B320ABE52 /* UIBezierPath+TextPaths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+TextPaths.h"; path = "Pod/Classes/UI/UIBezierPath+TextPaths.h"; sourceTree = "<group>"; };
+		A9CC19109E1DB7870C25E5CB21A437A6 /* DRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRLogger.m; path = Pod/Classes/Logger/DRLogger.m; sourceTree = "<group>"; };
+		A9E4DA02958543B8F960061F32D6F807 /* DRTwitterLinkHelpItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRTwitterLinkHelpItem.h; sourceTree = "<group>"; };
+		AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DoradaCore.xcconfig; sourceTree = "<group>"; };
+		AEA781B2B8D8EF06C44997B729BCEA81 /* NSString+OS7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OS7.h"; path = "Pod/Classes/String/NSString+OS7.h"; sourceTree = "<group>"; };
+		B067B73BA0C5A7E03A3F1AD0431A369C /* isPirate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = isPirate.m; path = Pod/Classes/Utilities/isPirate.m; sourceTree = "<group>"; };
+		B49D8B370967FF2296DE906F55E4D31E /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		B72D1ED04E7471232B22108762CA62FE /* DRHelpAndSupportViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRHelpAndSupportViewController.m; sourceTree = "<group>"; };
+		B98A07603D42B036DC88C3DC4243BD5F /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC29BB6F99EFBDD50117ECE4683FD060 /* DoradaCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DoradaCore-dummy.m"; sourceTree = "<group>"; };
+		BC5C1359C0C45518DD8C70B68EB38F4A /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		BC75F860908B9FB7F4EDD08A0274AD44 /* DRAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRAppDelegate.m; path = Pod/Classes/Singleton/DRAppDelegate.m; sourceTree = "<group>"; };
+		BE0F84366D3BC309EC90D545C40D68CF /* Pods-DRHelpAndSupportViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DRHelpAndSupportViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		BE5E65E994F5390D748AC978C3719CEE /* DRTintingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRTintingLabel.m; path = Pod/Classes/UI/DRTintingLabel.m; sourceTree = "<group>"; };
+		BE7060D66209F0D9FB414F631EF254C0 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		C1BFA34F1889E086B2A2B81613A9A989 /* DRSingleton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRSingleton.m; path = Pod/Classes/Singleton/DRSingleton.m; sourceTree = "<group>"; };
+		C4737FC0368EDF2EB70FD9E75A392B09 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		C553EFB7E2CF12ADC067BF290EC0237B /* DRTwoLabelTitleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRTwoLabelTitleView.h; path = Pod/Classes/UI/DRTwoLabelTitleView.h; sourceTree = "<group>"; };
+		CABD7F1C293E37BF5562BDCF2930A71F /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		CE7DA30BC1EADFCB3C1C278B0768488C /* DRSettingsSwitchTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSettingsSwitchTableViewCell.h; path = Pod/Classes/UI/DRSettingsSwitchTableViewCell.h; sourceTree = "<group>"; };
+		CE8139150BD7024415A32F7051CB4B3D /* DRLegacyLoadingHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRLegacyLoadingHUD.m; path = Pod/Classes/HUD/DRLegacyLoadingHUD.m; sourceTree = "<group>"; };
+		CEB0CC0E74C42A8005A3E4320B2F7DDD /* Pods-DRHelpAndSupportViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DRHelpAndSupportViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		D04DB7C53546CCD698C6F21493D62D13 /* UIDevice+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Extensions.h"; path = "Pod/Classes/Device/UIDevice+Extensions.h"; sourceTree = "<group>"; };
+		D56B4EA8087E9CCF3A5C761AA58395B6 /* Pods-DRHelpAndSupportViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRHelpAndSupportViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FB5CB01F464D58618B1BB3F9311727 /* DRThemedNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRThemedNavigationController.h; path = Pod/Classes/UI/DRThemedNavigationController.h; sourceTree = "<group>"; };
+		D74483B0BE86C01911C787F2D4C947EA /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		D8A918BE67652603B82691B28A96614E /* Pods-DRHelpAndSupportViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRHelpAndSupportViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DA520056EFFB3DA8E1BBA124302A25BA /* DRHelpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRHelpViewController.m; sourceTree = "<group>"; };
+		DA94AAE4AECD2F9620E0C2BB552EA3A6 /* DRSimpleAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRSimpleAlert.h; path = Pod/Classes/Alert/DRSimpleAlert.h; sourceTree = "<group>"; };
+		E2B8E8B50505E1DD9B27A79CB3C4F2C2 /* DRFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRFlowLayout.m; path = Pod/Classes/UI/DRFlowLayout.m; sourceTree = "<group>"; };
+		E4703785761B9A573B1B4AC77E8954E8 /* Pods-DRHelpAndSupportViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DRHelpAndSupportViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		E56C4471422E2D949DBB4A44CE2A0DE8 /* DRGetHelpItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DRGetHelpItem.m; sourceTree = "<group>"; };
+		E5CF23724BF16A5E7A6EEE36DF1BD52D /* Pods-DRHelpAndSupportViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DRHelpAndSupportViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		E70427178915970456B976FFEC5CE850 /* DRHelpAndSupportItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DRHelpAndSupportItem.h; sourceTree = "<group>"; };
+		E8C1F6CC474AB2E6E2409D75AB01C454 /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BCE451AA7F2B2141D6510A3D312023 /* DRBlurryBackgroundViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRBlurryBackgroundViewController.h; path = Pod/Classes/UI/DRBlurryBackgroundViewController.h; sourceTree = "<group>"; };
+		EA9AFC9503A7A9F5D76D52424C5DC77E /* DRLoadingHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRLoadingHUD.m; path = Pod/Classes/HUD/DRLoadingHUD.m; sourceTree = "<group>"; };
+		EB591DCB810AE001AB8BCEA58555D9E8 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		EEA440D53BCE6D6D703175C83FA0C28A /* UIBezierPath+TextPaths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+TextPaths.m"; path = "Pod/Classes/UI/UIBezierPath+TextPaths.m"; sourceTree = "<group>"; };
+		F09ADDB61019DE2FD08E1145A2240AE2 /* DRLegacyLoadingHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRLegacyLoadingHUD.h; path = Pod/Classes/HUD/DRLegacyLoadingHUD.h; sourceTree = "<group>"; };
+		F4BBDEB56588747200EEC8B4543A7395 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		F53FE2D0D15892759F0730DB1CB0AD98 /* UIDevice+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+Extensions.m"; path = "Pod/Classes/Device/UIDevice+Extensions.m"; sourceTree = "<group>"; };
+		F6758E8A4A72A62D5323D3F6B53A6266 /* DRApplicationPaths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRApplicationPaths.m; path = Pod/Classes/Utilities/DRApplicationPaths.m; sourceTree = "<group>"; };
+		F7F5E3AC4CB14233FDD472555C03BBC4 /* Pods-DRHelpAndSupportViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRHelpAndSupportViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F806DB670BC7A21DA52DBE63DFAA615F /* DRABTestingController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRABTestingController.m; path = Pod/Classes/ABTesting/DRABTestingController.m; sourceTree = "<group>"; };
+		FB820CE493508E7720C3CDE025FB286F /* DRNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRNavigationController.h; path = Pod/Classes/UI/DRNavigationController.h; sourceTree = "<group>"; };
+		FE8708AB7E1B6F328BF27E3050F8C61D /* Pods_DRHelpAndSupportViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRHelpAndSupportViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0687E73F7004C8346D9681DBC4D978F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927B8EC479D5671195A64BEB6F5FA31A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E700EC0747AB233CE99A080A0092DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0B9B382282A3D71A12119CE9444EA0 /* DoradaCore.framework in Frameworks */,
+				90ECB35DD78D68499CE29518400E0832 /* Foundation.framework in Frameworks */,
+				75BF1076B92CAF9F97D51E2BF95F394B /* ZipArchive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7CF9CF5AD33E557CC508039056F1DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4E4A6C8F0360467B8C30E25DA2278C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C91BCEC90D346F9F26EE9C973EDF4E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868ED8F855E1C07D043FFFC43D5FBB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB459509A9106FB99505DAB009BA245A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979BC0F62977EE9B64640C884D3E5840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011D866A37B29CD39ADC9EC5E14C1F95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E865C46FB8FB0406352E2E7AD773A16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4192BC20FFFEDE45E00519871589B9E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				493629BECBDC440A03E2F95F5D9289F2 /* DRHelpAndSupportViewController.modulemap */,
+				9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */,
+				1145A6CC199CB71769BA4FA35A8D0AE6 /* DRHelpAndSupportViewController-dummy.m */,
+				76A95FC1DC53CAD2EE7868DDAE87ABDC /* DRHelpAndSupportViewController-prefix.pch */,
+				599DFC15816948FE1B1C152CF3EEA084 /* DRHelpAndSupportViewController-umbrella.h */,
+				736C0D6191401E38DF1121FB107114EE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DRHelpAndSupportViewController";
+			sourceTree = "<group>";
+		};
+		4DB0932C6E2E2C3F89EDE71AEA347749 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2FF71BE6B4930F8E237C54BE3B27C /* DRGetRatingController.h */,
+				869DCFA33151A796050553F996E6A2F9 /* DRGetRatingController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5201C33D96A2EFA5A768561A8A2CFCB1 /* DoradaCore */ = {
+			isa = PBXGroup;
+			children = (
+				92C3D181FA23108B432F1D88FC189E1F /* DRABTestingController.h */,
+				F806DB670BC7A21DA52DBE63DFAA615F /* DRABTestingController.m */,
+				5A87AF1BC3DCF73CE75804E5E283D5DB /* DRActivityAlertView.h */,
+				75B2155A641C3531ADEA7878FF3C6BA5 /* DRActivityAlertView.m */,
+				7CC254A7383CE6E3B4A742B817F20B86 /* DRAppDelegate.h */,
+				BC75F860908B9FB7F4EDD08A0274AD44 /* DRAppDelegate.m */,
+				1EC5084BACA28750EC769569C8B66982 /* DRApplicationPaths.h */,
+				F6758E8A4A72A62D5323D3F6B53A6266 /* DRApplicationPaths.m */,
+				E9BCE451AA7F2B2141D6510A3D312023 /* DRBlurryBackgroundViewController.h */,
+				1A40C66E37806837E938FAA5D241F51C /* DRBlurryBackgroundViewController.m */,
+				989795DF0C07DA2813C8A37E5B479A65 /* DRDiskspaceUtilities.h */,
+				52B3B03C495D5B050E50B4F2D5F7D72F /* DRDiskspaceUtilities.m */,
+				9FA7C66099A605ADE47C8EF8E60ABC77 /* DRFlowLayout.h */,
+				E2B8E8B50505E1DD9B27A79CB3C4F2C2 /* DRFlowLayout.m */,
+				38D658FF62EF1A3FD033A87F24203249 /* DRInstallTracker.h */,
+				2C8FAF83EB660667F4C2D86321E35ED2 /* DRInstallTracker.m */,
+				F09ADDB61019DE2FD08E1145A2240AE2 /* DRLegacyLoadingHUD.h */,
+				CE8139150BD7024415A32F7051CB4B3D /* DRLegacyLoadingHUD.m */,
+				16F60D54284046AA07A91FB02FA722A9 /* DRLoadingHUD.h */,
+				EA9AFC9503A7A9F5D76D52424C5DC77E /* DRLoadingHUD.m */,
+				8F2E171DA497836FD7C386AF6816E751 /* DRLoadingHUDView.h */,
+				60A612CA44ED070FBAAE201737E8BC2B /* DRLoadingHUDView.m */,
+				07DA676064FE308D62CAC72DD1B50C98 /* DRLogger.h */,
+				A9CC19109E1DB7870C25E5CB21A437A6 /* DRLogger.m */,
+				FB820CE493508E7720C3CDE025FB286F /* DRNavigationController.h */,
+				3942EADF1D8FA2DF978A927FCA0DDC18 /* DRNavigationController.m */,
+				3DF01689248F6025F9E4B4C3BB083CC0 /* DRNavigationControllerWithPopControl.h */,
+				15278A915F3813E3FC21D11A07941004 /* DRNavigationControllerWithPopControl.m */,
+				1C089A1C5A6F54DFBDB6CC652007F7FD /* DRSeeThroughLabel.h */,
+				4941502B9C7CF593394E73E7ACF20B81 /* DRSeeThroughLabel.m */,
+				92C98E17E4D9905566201C3D643CAB21 /* DRSegmentedControl.h */,
+				A0FC7CAE9C337716E58405D0BD57130E /* DRSegmentedControl.m */,
+				5363960CE3A379E9AC949E6D49E99080 /* DRSeparatorView.h */,
+				2811638EE771D6996291F87DFB3CEB60 /* DRSeparatorView.m */,
+				CE7DA30BC1EADFCB3C1C278B0768488C /* DRSettingsSwitchTableViewCell.h */,
+				814C736BCECECD6E271AEAB69EE55ED1 /* DRSettingsSwitchTableViewCell.m */,
+				DA94AAE4AECD2F9620E0C2BB552EA3A6 /* DRSimpleAlert.h */,
+				19D793CB920D13EFAF0B19A24BAA6313 /* DRSimpleAlert.m */,
+				47E4035FFDF50A63A4AB3AF6662926E9 /* DRSingleton.h */,
+				C1BFA34F1889E086B2A2B81613A9A989 /* DRSingleton.m */,
+				D6FB5CB01F464D58618B1BB3F9311727 /* DRThemedNavigationController.h */,
+				43C6D610CB0B91C7E03018C2751EDD3B /* DRThemedNavigationController.m */,
+				6AFCE1B88BC9B2B3502D6C9BBFB25D32 /* DRTimeFormatter.h */,
+				70C5BC9B877D36DFCEC2F461FB39DD41 /* DRTimeFormatter.m */,
+				40613F12E7828A130273DDD7ACC5F13B /* DRTintingLabel.h */,
+				BE5E65E994F5390D748AC978C3719CEE /* DRTintingLabel.m */,
+				C553EFB7E2CF12ADC067BF290EC0237B /* DRTwoLabelTitleView.h */,
+				85BC51D68F6E4AE0E325C1BB1D317B46 /* DRTwoLabelTitleView.m */,
+				95CFDA0C341C4DAD1163AA81FF2A52AC /* isPirate.h */,
+				B067B73BA0C5A7E03A3F1AD0431A369C /* isPirate.m */,
+				AEA781B2B8D8EF06C44997B729BCEA81 /* NSString+OS7.h */,
+				40E7002DE556738F1FFC794F39656D52 /* NSString+OS7.m */,
+				A7E7CD01E0A7D3135C38792B320ABE52 /* UIBezierPath+TextPaths.h */,
+				EEA440D53BCE6D6D703175C83FA0C28A /* UIBezierPath+TextPaths.m */,
+				D04DB7C53546CCD698C6F21493D62D13 /* UIDevice+Extensions.h */,
+				F53FE2D0D15892759F0730DB1CB0AD98 /* UIDevice+Extensions.m */,
+				054FE59EBE29791E43EE088C30D6D4F5 /* UITabBarController+autoRotate.h */,
+				31A4C90084030CE5EAD8C11075EC654D /* UITabBarController+autoRotate.m */,
+				6BDF1FAFA3EC487ACA669DDC9AF21BC6 /* Support Files */,
+			);
+			path = DoradaCore;
+			sourceTree = "<group>";
+		};
+		52EE1711EBCE6E19E7F60DE05119E4C8 /* DRHelpAndSupportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69D1489C31CD8781A7EAE10252E3030D /* Pod */,
+				4192BC20FFFEDE45E00519871589B9E0 /* Support Files */,
+			);
+			name = DRHelpAndSupportViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		566B840E75D9B65BA1238C748AA0435B /* Pods-DRHelpAndSupportViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7597282756F9713AD9E33B7C3CCE3207 /* Info.plist */,
+				E4703785761B9A573B1B4AC77E8954E8 /* Pods-DRHelpAndSupportViewController_Tests.modulemap */,
+				67090918067433CF5B918F46B10DEC7C /* Pods-DRHelpAndSupportViewController_Tests-acknowledgements.markdown */,
+				F7F5E3AC4CB14233FDD472555C03BBC4 /* Pods-DRHelpAndSupportViewController_Tests-acknowledgements.plist */,
+				E5CF23724BF16A5E7A6EEE36DF1BD52D /* Pods-DRHelpAndSupportViewController_Tests-dummy.m */,
+				8C3128DD7E06F27BAE770DBA63804C22 /* Pods-DRHelpAndSupportViewController_Tests-frameworks.sh */,
+				CEB0CC0E74C42A8005A3E4320B2F7DDD /* Pods-DRHelpAndSupportViewController_Tests-resources.sh */,
+				A652AFE2ABB64C9EBD85DEA649D4C710 /* Pods-DRHelpAndSupportViewController_Tests-umbrella.h */,
+				90ADC8A864654C4D03BDAABA89CABB28 /* Pods-DRHelpAndSupportViewController_Tests.debug.xcconfig */,
+				D8A918BE67652603B82691B28A96614E /* Pods-DRHelpAndSupportViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-DRHelpAndSupportViewController_Tests";
+			path = "Target Support Files/Pods-DRHelpAndSupportViewController_Tests";
+			sourceTree = "<group>";
+		};
+		69D1489C31CD8781A7EAE10252E3030D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA6D4FEC29A43F3257ACDFB545D67F /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6BDF1FAFA3EC487ACA669DDC9AF21BC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07B40F833F735CCCA9DB082A6972AB88 /* DoradaCore.modulemap */,
+				AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */,
+				BC29BB6F99EFBDD50117ECE4683FD060 /* DoradaCore-dummy.m */,
+				1758C6750DAFE7B1AED5C56059891856 /* DoradaCore-prefix.pch */,
+				2971C4F16FB00FF4A6CE3863D57C5916 /* DoradaCore-umbrella.h */,
+				0C1E00AFE5FA9C61768886AA3E0DD069 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DoradaCore";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F6162B3B5BDAAB4B41358FB5C82B78E4 /* Development Pods */,
+				9B4E300A53C9AF4299D1112F1026F5DE /* Frameworks */,
+				BAB1136C93C8090DB06CCE51DF3C5FCA /* Pods */,
+				EBBD490518D41BC4001F4032C10161FB /* Products */,
+				E1BA230D06A96E57FDBFBE08FF6C9C5D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B4E300A53C9AF4299D1112F1026F5DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29AAE605D19E17F49EABB3670DDCCC54 /* DoradaCore.framework */,
+				E8C1F6CC474AB2E6E2409D75AB01C454 /* ZipArchive.framework */,
+				DA8BDC4D6C3439A477C02C182C369B63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4FA6D4FEC29A43F3257ACDFB545D67F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2EAA27E2BCBABF74413A8571842B61DB /* DRHelpAndSupportViewController.h */,
+				B72D1ED04E7471232B22108762CA62FE /* DRHelpAndSupportViewController.m */,
+				14982F1B4C7F51A779ECF837E9FBD585 /* DRHelpViewController.h */,
+				DA520056EFFB3DA8E1BBA124302A25BA /* DRHelpViewController.m */,
+				4DB0932C6E2E2C3F89EDE71AEA347749 /* Controllers */,
+				EAF1CA31E935DB974C9AC7B10A904735 /* HelpItems */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B337353186CE6CE4373B1BC337D5E3FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2231DB1044193D7AA368FDF06B5FD323 /* Info.plist */,
+				8868E32DCD06B607001566B59006181A /* ZipArchive.modulemap */,
+				B98A07603D42B036DC88C3DC4243BD5F /* ZipArchive.xcconfig */,
+				3AF5D7A6644B1E96E53EB6BF97FD1321 /* ZipArchive-dummy.m */,
+				CABD7F1C293E37BF5562BDCF2930A71F /* ZipArchive-prefix.pch */,
+				4F10F7A4A1CEC3496374922294AE635D /* ZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZipArchive";
+			sourceTree = "<group>";
+		};
+		BAB1136C93C8090DB06CCE51DF3C5FCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5201C33D96A2EFA5A768561A8A2CFCB1 /* DoradaCore */,
+				F53FC34511ED23E69AFA603F88A1CA54 /* ZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA8BDC4D6C3439A477C02C182C369B63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C7EDCE09B0DB66159150180A89408BE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DE5BBAB5AC0BA74028BA4B506DF39C03 /* Pods-DRHelpAndSupportViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				519E08693C5577F2F9413751C0CDBBCE /* Info.plist */,
+				52400DE3BC34364354F134BC9AE287A2 /* Pods-DRHelpAndSupportViewController_Example.modulemap */,
+				85AE9E8B864250333CB8FF3810069DB0 /* Pods-DRHelpAndSupportViewController_Example-acknowledgements.markdown */,
+				3F7555B6A18A15AA71A0065CFC0C4F4A /* Pods-DRHelpAndSupportViewController_Example-acknowledgements.plist */,
+				430504396135DF9658B8E8CE3A0D2365 /* Pods-DRHelpAndSupportViewController_Example-dummy.m */,
+				30A03CB5B337DDC6A30F4EDACD4C04D6 /* Pods-DRHelpAndSupportViewController_Example-frameworks.sh */,
+				3632FEAD8896ED556ABBF0BC63C192B3 /* Pods-DRHelpAndSupportViewController_Example-resources.sh */,
+				BE0F84366D3BC309EC90D545C40D68CF /* Pods-DRHelpAndSupportViewController_Example-umbrella.h */,
+				D56B4EA8087E9CCF3A5C761AA58395B6 /* Pods-DRHelpAndSupportViewController_Example.debug.xcconfig */,
+				8142B9197C2506D5103B2075B979699C /* Pods-DRHelpAndSupportViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-DRHelpAndSupportViewController_Example";
+			path = "Target Support Files/Pods-DRHelpAndSupportViewController_Example";
+			sourceTree = "<group>";
+		};
+		E1BA230D06A96E57FDBFBE08FF6C9C5D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BBAB5AC0BA74028BA4B506DF39C03 /* Pods-DRHelpAndSupportViewController_Example */,
+				566B840E75D9B65BA1238C748AA0435B /* Pods-DRHelpAndSupportViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EAF1CA31E935DB974C9AC7B10A904735 /* HelpItems */ = {
+			isa = PBXGroup;
+			children = (
+				6CE369C5FA4764A17F0F10C5C1DE905D /* DRGetHelpItem.h */,
+				E56C4471422E2D949DBB4A44CE2A0DE8 /* DRGetHelpItem.m */,
+				E70427178915970456B976FFEC5CE850 /* DRHelpAndSupportItem.h */,
+				40E825481C58F4F398C9FD39C88B04CC /* DRHelpAndSupportItem.m */,
+				90235A0B7EB557D506439E1E6C9ED4A9 /* DRRateAppHelpItem.h */,
+				3ACD799DDC9E5086507ABB0DE32E7167 /* DRRateAppHelpItem.m */,
+				A9E4DA02958543B8F960061F32D6F807 /* DRTwitterLinkHelpItem.h */,
+				9D438BA3914F6D059D4B700CED20A2CF /* DRTwitterLinkHelpItem.m */,
+			);
+			path = HelpItems;
+			sourceTree = "<group>";
+		};
+		EBBD490518D41BC4001F4032C10161FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74AD4B8AFCF63103539B0F08F4FC9698 /* DoradaCore.bundle */,
+				567F01D560A20C2DA15F7FD9BA9CE93B /* DoradaCore.framework */,
+				43FF7F2A16CB6ABEC704D1F7BEF2766F /* DRHelpAndSupportViewController.bundle */,
+				1E5CDA477E6131823A7958004196CBB2 /* DRHelpAndSupportViewController.framework */,
+				04C3B0FFC0E731F221E5A1AB18B0C998 /* Pods_DRHelpAndSupportViewController_Example.framework */,
+				FE8708AB7E1B6F328BF27E3050F8C61D /* Pods_DRHelpAndSupportViewController_Tests.framework */,
+				9DDDFA0C3EB242B9AFC5025A517542EF /* ZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53FC34511ED23E69AFA603F88A1CA54 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				D74483B0BE86C01911C787F2D4C947EA /* crypt.h */,
+				759914568FC465F5CC88079A059AE089 /* ioapi.c */,
+				B49D8B370967FF2296DE906F55E4D31E /* ioapi.h */,
+				EB591DCB810AE001AB8BCEA58555D9E8 /* mztools.c */,
+				02214D201386969FBE58C52FAB0E54C5 /* mztools.h */,
+				76B82C8035353A6700D715972993D0E7 /* unzip.c */,
+				C4737FC0368EDF2EB70FD9E75A392B09 /* unzip.h */,
+				BC5C1359C0C45518DD8C70B68EB38F4A /* zip.c */,
+				F4BBDEB56588747200EEC8B4543A7395 /* zip.h */,
+				BE7060D66209F0D9FB414F631EF254C0 /* ZipArchive.h */,
+				6EC83BE7417B91E41B15DB727FBAEC89 /* ZipArchive.m */,
+				B337353186CE6CE4373B1BC337D5E3FF /* Support Files */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		F6162B3B5BDAAB4B41358FB5C82B78E4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52EE1711EBCE6E19E7F60DE05119E4C8 /* DRHelpAndSupportViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28D1C80C7F0F2DFEC01E8CE700DAD797 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F576C52CB4AB65A6705BD0E7AF798A4 /* Pods-DRHelpAndSupportViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4039F513C48031ED680815DD3C3222B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563DFA63AF4FFAF6B5B79FDEB493B7A7 /* DRGetHelpItem.h in Headers */,
+				BB17F61363E97A9AFB6E7961100A1B8B /* DRGetRatingController.h in Headers */,
+				EC5144CAFFDFED1D7C05A40B54777B47 /* DRHelpAndSupportItem.h in Headers */,
+				9D6F045EB12081E2E6726E671615026C /* DRHelpAndSupportViewController-umbrella.h in Headers */,
+				1DB30C954A0B36B94D0B0156086745B3 /* DRHelpAndSupportViewController.h in Headers */,
+				B75391E4394C3F62A8FF2D9B501BD499 /* DRHelpViewController.h in Headers */,
+				C80962EE78C550AC933FD72F59244C99 /* DRRateAppHelpItem.h in Headers */,
+				A5956BC39F221D47EA5A4CE54F116305 /* DRTwitterLinkHelpItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F9891AA0BAD353ACC7512475586DD88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E09FD6C599F1108B42DCAEFE4DC64BC /* crypt.h in Headers */,
+				D4F4428ECAB04FD2983036EBDE53B008 /* ioapi.h in Headers */,
+				27420F42C0C139A22B7F2E453BE12AC0 /* mztools.h in Headers */,
+				E67305F8BA71E160FAC5D8411681CC50 /* unzip.h in Headers */,
+				27B13B4D7E59E1BB5CFB9CAC8228ECA7 /* zip.h in Headers */,
+				96DD7C198A91CBE3B11D7568102A3840 /* ZipArchive-umbrella.h in Headers */,
+				9E67FB02B2DE20FE7EAF87895A172166 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6337804FD23FC7AD4639D6EEE86D69C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44213015B29033314D87B84F39E4BF5B /* DoradaCore-umbrella.h in Headers */,
+				481B28F9D9ADE9CBDD3872E3403E6AF9 /* DRABTestingController.h in Headers */,
+				B15123271089FDE69792BD03B21C1EE9 /* DRActivityAlertView.h in Headers */,
+				45A868F78CB01EC2A445717318B8BE98 /* DRAppDelegate.h in Headers */,
+				8463C9EF9EB94EADE7DB13F034D299C2 /* DRApplicationPaths.h in Headers */,
+				A01C125274B642481A77200AC845E66A /* DRBlurryBackgroundViewController.h in Headers */,
+				08910BCC4E09804B096037423790B4CD /* DRDiskspaceUtilities.h in Headers */,
+				F54D2EC52A316B9F2546AF297628FEEA /* DRFlowLayout.h in Headers */,
+				8405591095E6F8E2F98699FCDA89510E /* DRInstallTracker.h in Headers */,
+				EEDAA59CFA363C025DD405128DD4521C /* DRLegacyLoadingHUD.h in Headers */,
+				8E1FAF4B40F226B2722A523962711E01 /* DRLoadingHUD.h in Headers */,
+				F936A8E8EAF6D59B56BC9F7329FD044C /* DRLoadingHUDView.h in Headers */,
+				86AEAA9732072F28667FC0B1355EF97F /* DRLogger.h in Headers */,
+				81CEAB824FBEC5ED8995B305A8C14C2E /* DRNavigationController.h in Headers */,
+				EFEF8F95AA174D94EA59BE398C94B8F5 /* DRNavigationControllerWithPopControl.h in Headers */,
+				4A31300DCEC7AAAC17ADB824E8553141 /* DRSeeThroughLabel.h in Headers */,
+				492D44E52D11C08D5B9F8BEC5C327527 /* DRSegmentedControl.h in Headers */,
+				128D6985FF10C9A3F9C1E3EB0BC187E0 /* DRSeparatorView.h in Headers */,
+				336F6C3F756E4AD87F70CD0376338A95 /* DRSettingsSwitchTableViewCell.h in Headers */,
+				10394975A148CC1A489C1BE9DE4DB249 /* DRSimpleAlert.h in Headers */,
+				60EDA265536E8DCF5BD652A2BB342107 /* DRSingleton.h in Headers */,
+				0E9428FC15D45D3AB456E2994E7AC6A6 /* DRThemedNavigationController.h in Headers */,
+				F6D219F433DB848E6F4CC30F6872BD4C /* DRTimeFormatter.h in Headers */,
+				DA774B87FA5091AD613F889F3B688518 /* DRTintingLabel.h in Headers */,
+				C7EB9B98C78AA94F44584B66A1DDA609 /* DRTwoLabelTitleView.h in Headers */,
+				EB4B745AEA3FE76F99DE591AE05B419C /* isPirate.h in Headers */,
+				9D9887713725AC582B540F0EF7AF52A7 /* NSString+OS7.h in Headers */,
+				3CEE8F0E2CB64C10A2B7AA349EE6058F /* UIBezierPath+TextPaths.h in Headers */,
+				C3E36127F2EFEBF17D83E388E172C389 /* UIDevice+Extensions.h in Headers */,
+				D91DF75E128751AE0BCED88AE95B3586 /* UITabBarController+autoRotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88A2DB10F5F05236AF63766BFB9C38C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5C91E5E4A5F83052D262E97F632E83 /* Pods-DRHelpAndSupportViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EDA0F603435CEFA83AD1B62FC451D29 /* DRHelpAndSupportViewController-DRHelpAndSupportViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3560DACBAD0209537EC3800D6AC09441 /* Build configuration list for PBXNativeTarget "DRHelpAndSupportViewController-DRHelpAndSupportViewController" */;
+			buildPhases = (
+				6FFF42019C865321370C446B1372AC6D /* Sources */,
+				7C91BCEC90D346F9F26EE9C973EDF4E3 /* Frameworks */,
+				88D1C00EF882FC1C8C5C3E1ADCD008AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DRHelpAndSupportViewController-DRHelpAndSupportViewController";
+			productName = "DRHelpAndSupportViewController-DRHelpAndSupportViewController";
+			productReference = 43FF7F2A16CB6ABEC704D1F7BEF2766F /* DRHelpAndSupportViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3E075F1724EFF8A035460B91CBBDDA12 /* Pods-DRHelpAndSupportViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDB9903CBBC2FE5F50EA54ADC9AF1A3 /* Build configuration list for PBXNativeTarget "Pods-DRHelpAndSupportViewController_Tests" */;
+			buildPhases = (
+				D9CD18085E8AB4888A2F5370D6B91292 /* Sources */,
+				0687E73F7004C8346D9681DBC4D978F7 /* Frameworks */,
+				F88A2DB10F5F05236AF63766BFB9C38C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF049B2A992C45B82534280594BD465 /* PBXTargetDependency */,
+				38BC07F95EC17858E7853EF0F3A24CA3 /* PBXTargetDependency */,
+				8B5E76FC1A517563E03EC2FBF6187108 /* PBXTargetDependency */,
+			);
+			name = "Pods-DRHelpAndSupportViewController_Tests";
+			productName = "Pods-DRHelpAndSupportViewController_Tests";
+			productReference = FE8708AB7E1B6F328BF27E3050F8C61D /* Pods_DRHelpAndSupportViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D784805DF3016670E9F996A8EC19AE8 /* DRHelpAndSupportViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791BC2D499B09BB5F4A82B887321B0D7 /* Build configuration list for PBXNativeTarget "DRHelpAndSupportViewController" */;
+			buildPhases = (
+				B0A65157160B55DD9D6578DF00ECFC7D /* Sources */,
+				39E700EC0747AB233CE99A080A0092DE /* Frameworks */,
+				00AA8D81682271E4FBFBCC8E8CEE3387 /* Resources */,
+				4039F513C48031ED680815DD3C3222B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E61883D9E73538A464CB4D11A320EBF9 /* PBXTargetDependency */,
+				EC412EDBBBFDEBB84B8E4663E435959C /* PBXTargetDependency */,
+				E4B3C90434BE15B7C4A91B6B5D6BBDCF /* PBXTargetDependency */,
+			);
+			name = DRHelpAndSupportViewController;
+			productName = DRHelpAndSupportViewController;
+			productReference = 1E5CDA477E6131823A7958004196CBB2 /* DRHelpAndSupportViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F92EBF9107E7C572E1F201D1C751EB2 /* DoradaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78B75984E79A724B442C6E937274AB98 /* Build configuration list for PBXNativeTarget "DoradaCore" */;
+			buildPhases = (
+				4515FD7A188025F44EBC776B471FC579 /* Sources */,
+				868ED8F855E1C07D043FFFC43D5FBB02 /* Frameworks */,
+				A662BE1BCED28FCE116975B982B7664D /* Resources */,
+				E6337804FD23FC7AD4639D6EEE86D69C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74C7C3E12505049FBD3806C7029BC10C /* PBXTargetDependency */,
+			);
+			name = DoradaCore;
+			productName = DoradaCore;
+			productReference = 567F01D560A20C2DA15F7FD9BA9CE93B /* DoradaCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E732955E3EA5DD656A062837FCA8F10 /* DoradaCore-DoradaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A555E62EE09E4F500EFF6CBF91900C /* Build configuration list for PBXNativeTarget "DoradaCore-DoradaCore" */;
+			buildPhases = (
+				1BBA12136478B6EEE152EE31A946B451 /* Sources */,
+				E865C46FB8FB0406352E2E7AD773A16A /* Frameworks */,
+				B508F960B85C57D45F25C5FF001047A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DoradaCore-DoradaCore";
+			productName = "DoradaCore-DoradaCore";
+			productReference = 74AD4B8AFCF63103539B0F08F4FC9698 /* DoradaCore.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BAB0EA14D2CB28F50699203DC26410F9 /* Pods-DRHelpAndSupportViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0712459D21FA8938962E13BF803A51C2 /* Build configuration list for PBXNativeTarget "Pods-DRHelpAndSupportViewController_Example" */;
+			buildPhases = (
+				096A4B31C51C871DEF149F079A3521E7 /* Sources */,
+				7C7CF9CF5AD33E557CC508039056F1DF /* Frameworks */,
+				28D1C80C7F0F2DFEC01E8CE700DAD797 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50372DA8127355583B76C61662E3246C /* PBXTargetDependency */,
+				52619204A5C98A8D58A9F6013C90BCC0 /* PBXTargetDependency */,
+				940D277D8F1513D3F20C556BFE93EAE5 /* PBXTargetDependency */,
+			);
+			name = "Pods-DRHelpAndSupportViewController_Example";
+			productName = "Pods-DRHelpAndSupportViewController_Example";
+			productReference = 04C3B0FFC0E731F221E5A1AB18B0C998 /* Pods_DRHelpAndSupportViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEC386469B991A8E6BF15074DE1E7342 /* ZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CA740828089138BA3E13F77EDB18F9 /* Build configuration list for PBXNativeTarget "ZipArchive" */;
+			buildPhases = (
+				270F6990BD0FB1382FCD0E120ABCA813 /* Sources */,
+				979BC0F62977EE9B64640C884D3E5840 /* Frameworks */,
+				4F9891AA0BAD353ACC7512475586DD88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipArchive;
+			productName = ZipArchive;
+			productReference = 9DDDFA0C3EB242B9AFC5025A517542EF /* ZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EBBD490518D41BC4001F4032C10161FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F92EBF9107E7C572E1F201D1C751EB2 /* DoradaCore */,
+				7E732955E3EA5DD656A062837FCA8F10 /* DoradaCore-DoradaCore */,
+				4D784805DF3016670E9F996A8EC19AE8 /* DRHelpAndSupportViewController */,
+				0EDA0F603435CEFA83AD1B62FC451D29 /* DRHelpAndSupportViewController-DRHelpAndSupportViewController */,
+				BAB0EA14D2CB28F50699203DC26410F9 /* Pods-DRHelpAndSupportViewController_Example */,
+				3E075F1724EFF8A035460B91CBBDDA12 /* Pods-DRHelpAndSupportViewController_Tests */,
+				EEC386469B991A8E6BF15074DE1E7342 /* ZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00AA8D81682271E4FBFBCC8E8CEE3387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9753B7BE3C87569FC9D6DB6DBBDBEC /* DRHelpAndSupportViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D1C00EF882FC1C8C5C3E1ADCD008AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A662BE1BCED28FCE116975B982B7664D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18751F11D70318B59CD1C2687914809F /* DoradaCore.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B508F960B85C57D45F25C5FF001047A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096A4B31C51C871DEF149F079A3521E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1A972CC4344C50F2FA07D768F8125E /* Pods-DRHelpAndSupportViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBA12136478B6EEE152EE31A946B451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270F6990BD0FB1382FCD0E120ABCA813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C58B6D5EFE626AD26721EDC38170AE /* ioapi.c in Sources */,
+				25638B151E92896A52307EAB50F0B18A /* mztools.c in Sources */,
+				469CCAF06C296599120B0F404A26ECCF /* unzip.c in Sources */,
+				50168647D1F861F7E89EEE1F54DD550F /* zip.c in Sources */,
+				A9D536F9C13C6C7EE187055BDFE485C9 /* ZipArchive-dummy.m in Sources */,
+				990B0A9DEC0E034F1E98855004ABF112 /* ZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515FD7A188025F44EBC776B471FC579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE61115156B8E92D173DD6CB84C23AEF /* DoradaCore-dummy.m in Sources */,
+				F5B3ABFFAC55A04C19AD2A577109F490 /* DRABTestingController.m in Sources */,
+				B0B876A2DB55866FAEB30267E645DC2C /* DRActivityAlertView.m in Sources */,
+				F4E6C65356056FE227DC342535412792 /* DRAppDelegate.m in Sources */,
+				98378E0794128AC9694600A08D1D5B05 /* DRApplicationPaths.m in Sources */,
+				AF9E85099B83E76D869E54DBA67F5F1C /* DRBlurryBackgroundViewController.m in Sources */,
+				D3D31857CA7BD077F52B82C2E4AB4833 /* DRDiskspaceUtilities.m in Sources */,
+				64173186329A0D2BBBAA91714A621E48 /* DRFlowLayout.m in Sources */,
+				01922AC26315477EDADB70B8E61C2F4C /* DRInstallTracker.m in Sources */,
+				1879A052C669CE51C28A396D501A755A /* DRLegacyLoadingHUD.m in Sources */,
+				C587CE0C23411E44C37E59BD5E1AE48D /* DRLoadingHUD.m in Sources */,
+				D2D69DC7E1318E37DF61975EA1BDB6F4 /* DRLoadingHUDView.m in Sources */,
+				C07E78963E289AD56819C29A4E101C71 /* DRLogger.m in Sources */,
+				750F6BC87FD19E257F04089940549EDA /* DRNavigationController.m in Sources */,
+				1B8072FDD335B9D0EC088199FE6E2531 /* DRNavigationControllerWithPopControl.m in Sources */,
+				C3B41D6B49FBB9F8D07812D13ED84C9B /* DRSeeThroughLabel.m in Sources */,
+				C0C06E3DC5F43C21036151E9B15266E7 /* DRSegmentedControl.m in Sources */,
+				E4BF83DC6D8B61B6631212A672B106A3 /* DRSeparatorView.m in Sources */,
+				1227D0E30C6D39FD861AFA07AC32A198 /* DRSettingsSwitchTableViewCell.m in Sources */,
+				14D4352004A64A6857ACC62B85C905D3 /* DRSimpleAlert.m in Sources */,
+				CDDEE09B0E2F7057F2AFD00C62FCC16B /* DRSingleton.m in Sources */,
+				9D57FA3654829A855409A00A343A5BE8 /* DRThemedNavigationController.m in Sources */,
+				B80DC0E300798FCE3C81A72BDCFA8DBF /* DRTimeFormatter.m in Sources */,
+				C4566D31A9638337E14CEA929E1CF5CB /* DRTintingLabel.m in Sources */,
+				6C30D3B27B151E2A15044A7C67EB4FD0 /* DRTwoLabelTitleView.m in Sources */,
+				8874235448BF3014648C49B93EB48972 /* isPirate.m in Sources */,
+				2869105DBEAB7628F96A8188AF39973B /* NSString+OS7.m in Sources */,
+				DA8523A4F1794154D2B2BA4D8D53425E /* UIBezierPath+TextPaths.m in Sources */,
+				824BE6ED79DD1D310A986D996AD4558C /* UIDevice+Extensions.m in Sources */,
+				F69DB0CF4D48AB7D652A847D95DBE23B /* UITabBarController+autoRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FFF42019C865321370C446B1372AC6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A65157160B55DD9D6578DF00ECFC7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADCC109FE1A977C3DDF23BE378F7215 /* DRGetHelpItem.m in Sources */,
+				F73BE85CD0B3D929C10B1B8BF8AEB2CE /* DRGetRatingController.m in Sources */,
+				7B9191D07F6882CECAEA88699000C424 /* DRHelpAndSupportItem.m in Sources */,
+				45506ACAAA0B71C302E8D1996352674F /* DRHelpAndSupportViewController-dummy.m in Sources */,
+				3186151CDFEB16FCCBF5325BFEC26D61 /* DRHelpAndSupportViewController.m in Sources */,
+				AB9A59AE787BAD2C42760FDF476BF9CE /* DRHelpViewController.m in Sources */,
+				4D72DEAB3E46FD13FC4A9E89AAE42A90 /* DRRateAppHelpItem.m in Sources */,
+				CE6D2ACB4B71598B13255D02BABCFC9D /* DRTwitterLinkHelpItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CD18085E8AB4888A2F5370D6B91292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF2A98585CDB59804759BE09DD13997 /* Pods-DRHelpAndSupportViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38BC07F95EC17858E7853EF0F3A24CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoradaCore;
+			target = 4F92EBF9107E7C572E1F201D1C751EB2 /* DoradaCore */;
+			targetProxy = 3FA4E2E1B59C59B3FB49CC089C8DFB78 /* PBXContainerItemProxy */;
+		};
+		50372DA8127355583B76C61662E3246C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DRHelpAndSupportViewController;
+			target = 4D784805DF3016670E9F996A8EC19AE8 /* DRHelpAndSupportViewController */;
+			targetProxy = 2FA979F083534588DB555BFEB21E9228 /* PBXContainerItemProxy */;
+		};
+		52619204A5C98A8D58A9F6013C90BCC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoradaCore;
+			target = 4F92EBF9107E7C572E1F201D1C751EB2 /* DoradaCore */;
+			targetProxy = 23D7FBACECA9D1A0568681C17170B13A /* PBXContainerItemProxy */;
+		};
+		74C7C3E12505049FBD3806C7029BC10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DoradaCore-DoradaCore";
+			target = 7E732955E3EA5DD656A062837FCA8F10 /* DoradaCore-DoradaCore */;
+			targetProxy = B1198335DC453F5C77B68D4422DEE59C /* PBXContainerItemProxy */;
+		};
+		8B5E76FC1A517563E03EC2FBF6187108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = EEC386469B991A8E6BF15074DE1E7342 /* ZipArchive */;
+			targetProxy = ECFCCC0C43156E9ED76A5D07BDD4476C /* PBXContainerItemProxy */;
+		};
+		940D277D8F1513D3F20C556BFE93EAE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = EEC386469B991A8E6BF15074DE1E7342 /* ZipArchive */;
+			targetProxy = 5C0FC072AA376513DC0679EEB87A1D84 /* PBXContainerItemProxy */;
+		};
+		DCF049B2A992C45B82534280594BD465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DRHelpAndSupportViewController;
+			target = 4D784805DF3016670E9F996A8EC19AE8 /* DRHelpAndSupportViewController */;
+			targetProxy = 0B74BF48B7213BFD0A02E2AC903F1942 /* PBXContainerItemProxy */;
+		};
+		E4B3C90434BE15B7C4A91B6B5D6BBDCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = EEC386469B991A8E6BF15074DE1E7342 /* ZipArchive */;
+			targetProxy = 50EA004A225051A4AA67F70EEC0440B0 /* PBXContainerItemProxy */;
+		};
+		E61883D9E73538A464CB4D11A320EBF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DRHelpAndSupportViewController-DRHelpAndSupportViewController";
+			target = 0EDA0F603435CEFA83AD1B62FC451D29 /* DRHelpAndSupportViewController-DRHelpAndSupportViewController */;
+			targetProxy = 154FD67E4C909F32CAB5CBA2B9C1980B /* PBXContainerItemProxy */;
+		};
+		EC412EDBBBFDEBB84B8E4663E435959C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoradaCore;
+			target = 4F92EBF9107E7C572E1F201D1C751EB2 /* DoradaCore */;
+			targetProxy = F51F5958DE848A7F2803483E82FC3DCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1FD187E27FC2F0CBCE471205CDCC4652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DRHelpAndSupportViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		22D99B8C38CEBF1C60B325C2612D7AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8142B9197C2506D5103B2075B979699C /* Pods-DRHelpAndSupportViewController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Example/Pods-DRHelpAndSupportViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DRHelpAndSupportViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AC1FA6ED74C1E721005EB46B9D105B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DoradaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4DB5B0CF3AC0A9DE8EF12E736C9938C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A918BE67652603B82691B28A96614E /* Pods-DRHelpAndSupportViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Tests/Pods-DRHelpAndSupportViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DRHelpAndSupportViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55A17C0311A92E0593F73B115ABBEAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DRHelpAndSupportViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		81484FB09633583DFABA83FBF0E278F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56B4EA8087E9CCF3A5C761AA58395B6 /* Pods-DRHelpAndSupportViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Example/Pods-DRHelpAndSupportViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DRHelpAndSupportViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91DD05D107287236BBA5814FAD7FD865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98A07603D42B036DC88C3DC4243BD5F /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C6CB32FEC5D29BCFEC928F64FC5C6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DoradaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A8DC22D7E9716B0C18E9883FF0C8A455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DRHelpAndSupportViewController/DRHelpAndSupportViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DRHelpAndSupportViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DRHelpAndSupportViewController/DRHelpAndSupportViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DRHelpAndSupportViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD029229FAD4E7BCC69EC63C38044337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFEBE0383EBC854F6CD381E005BB962 /* DRHelpAndSupportViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DRHelpAndSupportViewController/DRHelpAndSupportViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DRHelpAndSupportViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DRHelpAndSupportViewController/DRHelpAndSupportViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DRHelpAndSupportViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCEB023CEFCD8998C74C01470D51695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98A07603D42B036DC88C3DC4243BD5F /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1A89516CBE358E7920D7FF4BEB9C64D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DoradaCore/DoradaCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DoradaCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DoradaCore/DoradaCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DoradaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE45E7D3F82A55D6AF714BDBA5E4F0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0FE19F4F9D081C1CD5CD049166976E /* DoradaCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DoradaCore/DoradaCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DoradaCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DoradaCore/DoradaCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DoradaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFC9BA1B43AF0FFF0740E36043B479D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90ADC8A864654C4D03BDAABA89CABB28 /* Pods-DRHelpAndSupportViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DRHelpAndSupportViewController_Tests/Pods-DRHelpAndSupportViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DRHelpAndSupportViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0712459D21FA8938962E13BF803A51C2 /* Build configuration list for PBXNativeTarget "Pods-DRHelpAndSupportViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81484FB09633583DFABA83FBF0E278F5 /* Debug */,
+				22D99B8C38CEBF1C60B325C2612D7AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20CA740828089138BA3E13F77EDB18F9 /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DD05D107287236BBA5814FAD7FD865 /* Debug */,
+				CCEB023CEFCD8998C74C01470D51695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3560DACBAD0209537EC3800D6AC09441 /* Build configuration list for PBXNativeTarget "DRHelpAndSupportViewController-DRHelpAndSupportViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A17C0311A92E0593F73B115ABBEAFF /* Debug */,
+				1FD187E27FC2F0CBCE471205CDCC4652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78B75984E79A724B442C6E937274AB98 /* Build configuration list for PBXNativeTarget "DoradaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A89516CBE358E7920D7FF4BEB9C64D /* Debug */,
+				DE45E7D3F82A55D6AF714BDBA5E4F0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		791BC2D499B09BB5F4A82B887321B0D7 /* Build configuration list for PBXNativeTarget "DRHelpAndSupportViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD029229FAD4E7BCC69EC63C38044337 /* Debug */,
+				A8DC22D7E9716B0C18E9883FF0C8A455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A555E62EE09E4F500EFF6CBF91900C /* Build configuration list for PBXNativeTarget "DoradaCore-DoradaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC1FA6ED74C1E721005EB46B9D105B4 /* Debug */,
+				9C6CB32FEC5D29BCFEC928F64FC5C6E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDB9903CBBC2FE5F50EA54ADC9AF1A3 /* Build configuration list for PBXNativeTarget "Pods-DRHelpAndSupportViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFC9BA1B43AF0FFF0740E36043B479D6 /* Debug */,
+				4DB5B0CF3AC0A9DE8EF12E736C9938C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

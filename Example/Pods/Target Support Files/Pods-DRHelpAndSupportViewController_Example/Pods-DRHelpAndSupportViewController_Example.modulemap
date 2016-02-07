@@ -1,0 +1,6 @@
+framework module Pods_DRHelpAndSupportViewController_Example {
+  umbrella header "Pods-DRHelpAndSupportViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module DoradaCore {
+  umbrella header "DoradaCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

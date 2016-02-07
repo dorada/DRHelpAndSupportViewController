@@ -1,0 +1,25 @@
+{
+  "name": "DoradaCore",
+  "version": "0.1.0",
+  "summary": "A set of classes frequently used in all my apps",
+  "description": "A set of useful classes frequently used in all my apps",
+  "homepage": "https://github.com/dorada/DoradaCore",
+  "license": "MIT",
+  "authors": {
+    "Daniel Broad": "daniel@dorada.org"
+  },
+  "source": {
+    "git": "https://github.com/dorada/DoradaCore.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.1"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "DoradaCore": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

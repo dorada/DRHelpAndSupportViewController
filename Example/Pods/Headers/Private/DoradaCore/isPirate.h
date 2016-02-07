@@ -1,0 +1,1 @@
+../../../DoradaCore/Pod/Classes/Utilities/isPirate.h

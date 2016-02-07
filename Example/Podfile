@@ -1,4 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/dorada/PodSpecs.git'
+
 use_frameworks!
 
 target 'DRHelpAndSupportViewController_Example', :exclusive => true do
@@ -8,5 +10,4 @@ end
 target 'DRHelpAndSupportViewController_Tests', :exclusive => true do
   pod 'DRHelpAndSupportViewController', :path => '../'
 
-  
 end

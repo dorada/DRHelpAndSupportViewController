@@ -1,0 +1,1 @@
+../../../DoradaCore/Pod/Classes/Singleton/DRSingleton.h
