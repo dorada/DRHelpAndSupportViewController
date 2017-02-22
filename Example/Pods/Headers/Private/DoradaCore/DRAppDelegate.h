@@ -1,1 +1,0 @@
-../../../DoradaCore/Pod/Classes/Singleton/DRAppDelegate.h

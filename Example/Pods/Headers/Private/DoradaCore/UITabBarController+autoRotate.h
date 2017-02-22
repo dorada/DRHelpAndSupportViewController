@@ -1,1 +1,0 @@
-../../../DoradaCore/Pod/Classes/UI/UITabBarController+autoRotate.h

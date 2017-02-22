@@ -1,1 +1,0 @@
-../../../DoradaCore/Pod/Classes/Device/UIDevice+Extensions.h

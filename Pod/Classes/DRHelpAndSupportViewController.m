@@ -1,6 +1,5 @@
 //
-//  HSHelpAndSupportViewController.m
-//  Hundred Square
+//  DRHelpAndSupportViewController.m
 //
 //  Created by Daniel Broad on 11/04/2011.
 //  Copyright 2011 Dorada. All rights reserved.
@@ -8,9 +7,21 @@
 
 #import "DRHelpAndSupportViewController.h"
 
+#import "DRInstallTracker.h"
+
 #import "DRHelpAndSupportItem.h"
+#import "DRHelpViewController.h"
+#import "DRGetHelpItem.h"
+
+#import "DRApplicationPaths.h"
+#import "DRTwitterLinkHelpItem.h"
 
 #pragma mark - DRMailComposeViewController
+
+@interface DRApplicationDelegate : NSObject
+-(NSString*) getFeedbackLog;
+-(NSArray*) helpAttachments;
+@end
 
 @interface DRHelpAndSupportViewController ()
 
@@ -29,6 +40,7 @@
 					  [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"],
 					  [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
         self.cancelButton = cancelButton;
+        self.supportSections = [self defaultSupportSections];
 	}
 	
 	return self;
@@ -78,9 +90,13 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self itemsForSection:section].count;
+    return [self itemsForSection:section].helpItems.count;
 }
 
+-(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    DRHelpAndSupportSection *hssection = [self itemsForSection:section];
+    return hssection.title;
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -94,10 +110,11 @@
     }
     
     // Configure the cell...
-    NSArray *section = [self itemsForSection:indexPath.section];
-    DRHelpAndSupportItem *item = [section objectAtIndex:indexPath.row];
+    DRHelpAndSupportSection *section = [self itemsForSection:indexPath.section];
+    DRHelpAndSupportItem *item = [section.helpItems objectAtIndex:indexPath.row];
     
     cell.textLabel.text = item.title;
+    cell.detailTextLabel.text = item.subtitle;
     item.containingCell = cell;
     item.containingHelpViewController = self;
     
@@ -111,8 +128,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
     
-    NSArray *section = [self itemsForSection:indexPath.section];
-    DRHelpAndSupportItem *item = [section objectAtIndex:indexPath.row];
+    DRHelpAndSupportSection *section = [self itemsForSection:indexPath.section];
+    DRHelpAndSupportItem *item = [section.helpItems objectAtIndex:indexPath.row];
 
     item.actionHandler(item);
 
@@ -120,7 +137,7 @@
 
 #pragma mark - sections
 
--(NSArray<DRHelpAndSupportItem*> *) itemsForSection: (NSInteger) section {
+-(DRHelpAndSupportSection *) itemsForSection: (NSInteger) section {
     return [self.supportSections objectAtIndex:section];
 }
 
@@ -192,6 +209,90 @@
     
     
     return viewImage;
+}
+
+#pragma mark - help sections
+
+-(NSArray*) defaultSupportSections {
+    return @[
+             [self defaultHelpSection1],
+             [self defaultHelpSection2],
+             [self defaultLinksSection],
+             [self defaultLegalSection]
+             ];
+}
+
+-(DRHelpAndSupportSection*) defaultHelpSection1 {
+    return [[DRHelpAndSupportSection alloc] initWithTitle: NSLocalizedString(@"Help", nil)
+                                                helpItems: @[
+                                                            [DRHelpViewController quickHelpItem]
+                                                            ]
+            ];
+}
+
+-(DRHelpAndSupportSection*) defaultHelpSection2 {
+    NSMutableArray *helpAttachments = [NSMutableArray array];
+    DRApplicationDelegate *delegate = (DRApplicationDelegate*) [UIApplication sharedApplication].delegate;
+    if ([delegate respondsToSelector:@selector(helpAttachments)]) {
+        [helpAttachments addObjectsFromArray:[delegate helpAttachments]];
+    }
+    if ([delegate respondsToSelector:@selector(getFeedbackLog)]) {
+        NSString *log = [delegate getFeedbackLog];
+        NSString *debug = [[DRApplicationPaths applicationCachesDirectory] stringByAppendingPathComponent:@"debug.log"];
+        if ([log writeToFile:debug atomically:NO encoding:NSUTF8StringEncoding error:nil]) {
+            [helpAttachments addObject:debug];
+        }
+    }
+    NSMutableArray *items = [@[
+             [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"FAQ", @"Frequently Asked Questions") actionHandler:^(DRHelpAndSupportItem *item) {
+                 NSString *name = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+                 name = [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+                 NSString *url = [NSString stringWithFormat:@"https://www.dorada.co.uk/api/faq.php?app=%@",name];
+                 [[UIApplication sharedApplication] openURL:url options:nil completionHandler:nil];
+             }],
+             [[DRGetHelpItem alloc] initWithTitle:NSLocalizedString(@"Get Help", nil)
+                                  recipientEmails:@[@"support@dorada.co.uk"]
+                                  attachmentPaths:helpAttachments]
+             ] mutableCopy];
+    
+    return [[DRHelpAndSupportSection alloc] initWithTitle: nil
+                                                helpItems: items
+            ];
+}
+
+-(DRHelpAndSupportSection*) defaultLinksSection {
+    NSString *twitterID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"twitter_user"];
+    NSMutableArray *items = [NSMutableArray array];
+    [items addObjectsFromArray: @[
+             [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"More Apps", nil) actionHandler:^(DRHelpAndSupportItem *item) {
+                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.dorada.co.uk/AppStore"]];
+             }]
+    ]];
+    
+    if (twitterID) {
+        [items addObject: [[DRTwitterLinkHelpItem alloc] initWithTwitterUsername:twitterID]];
+    }
+    return [[DRHelpAndSupportSection alloc] initWithTitle: NSLocalizedString(@"Links", @"Links to pages on the internet")
+                                                helpItems: items
+            ];
+}
+
+-(DRHelpAndSupportSection*) defaultLegalSection {
+    NSMutableArray *items = [NSMutableArray array];
+    [items addObjectsFromArray: @[
+                                  [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"Privacy Policy", nil) actionHandler:^(DRHelpAndSupportItem *item) {
+        NSString *url = [NSString stringWithFormat:@"https://www.doradasoftware.com/privacy"];
+        [[UIApplication sharedApplication] openURL:url options:nil completionHandler:nil];
+    }],
+                                  [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"Terms of Use", nil) actionHandler:^(DRHelpAndSupportItem *item) {
+        NSString *url = [NSString stringWithFormat:@"https://www.doradasoftware.com/terms"];
+        [[UIApplication sharedApplication] openURL:url options:nil completionHandler:nil];
+    }]
+                                  ]];
+    return [[DRHelpAndSupportSection alloc] initWithTitle: NSLocalizedString(@"Legal", @"Links to privacy policy and terms of use")
+                                                helpItems: items
+            ];
+    
 }
 
 @end

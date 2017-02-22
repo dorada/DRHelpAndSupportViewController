@@ -155,9 +155,7 @@
 
 @implementation DRMailComposeViewController
 
--(UIStatusBarStyle) preferredStatusBarStyle {
-    return _preferredStatusBarStyle;
-}
+@synthesize preferredStatusBarStyle;
 
 -(UIViewController *)childViewControllerForStatusBarStyle
 {

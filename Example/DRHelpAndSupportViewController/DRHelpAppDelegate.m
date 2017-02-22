@@ -74,19 +74,21 @@
 
 -(NSArray*) supportSections {
     
-    NSArray *section1 = @[
-                          [DRHelpViewController quickHelpItem],
-                          [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"FAQ", nil) actionHandler:^(DRHelpAndSupportItem *item) {
-                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://support.dorada.co.uk"]];
-                          }],
-                          [[DRGetHelpItem alloc] initWithTitle:NSLocalizedString(@"Get Help", nil)
-                                recipientEmails:@[@"support@dorada.co.uk"] attachmentPaths:@[_importantLogFile.persistantFilePath]
-                           ],
-                          ];
-    
-    NSArray *section2 = @[
-                          [[DRTwitterLinkHelpItem alloc] initWithTwitterUsername:@"DoradaSoftware"],
-                          ];
+    DRHelpAndSupportSection *section1 = [[DRHelpAndSupportSection alloc] initWithTitle:NSLocalizedString(@"Help", nil)
+                                                                             helpItems:@[
+                                                                                         [DRHelpViewController quickHelpItem],
+                                                                                         [[DRHelpAndSupportItem alloc] initWithTitle:NSLocalizedString(@"FAQ", nil) actionHandler:^(DRHelpAndSupportItem *item) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://support.dorada.co.uk"]];
+    }],
+                                                                                         [[DRGetHelpItem alloc] initWithTitle:NSLocalizedString(@"Get Help", nil)
+                                                                                                              recipientEmails:@[@"support@dorada.co.uk"] attachmentPaths:@[_importantLogFile.persistantFilePath]
+                                                                                          ],
+                                                                                         ]
+                                         ];
+    DRHelpAndSupportSection *section2 = [[DRHelpAndSupportSection alloc] initWithTitle:NSLocalizedString(@"Links", nil)
+                                                                             helpItems:@[
+                                                                                         [[DRTwitterLinkHelpItem alloc] initWithTwitterUsername:@"DoradaSoftware"],
+                                                                                         ]];
     
     return @[section1,section2];
 }

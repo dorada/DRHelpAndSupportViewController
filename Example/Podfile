@@ -3,11 +3,11 @@ source 'https://github.com/dorada/PodSpecs.git'
 
 use_frameworks!
 
-target 'DRHelpAndSupportViewController_Example', :exclusive => true do
+target 'DRHelpAndSupportViewController_Example' do
   pod 'DRHelpAndSupportViewController', :path => '../'
 end
 
-target 'DRHelpAndSupportViewController_Tests', :exclusive => true do
+target 'DRHelpAndSupportViewController_Tests' do
   pod 'DRHelpAndSupportViewController', :path => '../'
 
 end
